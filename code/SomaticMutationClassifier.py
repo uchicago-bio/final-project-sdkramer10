@@ -48,3 +48,4 @@ for i in range(len(svnFiles)):
     somaticMutationClassifier.fit(svnCalls)
     predictions, callersInPipeline = somaticMutationClassifier.predict(svnCalls)
     print f1_score(predictions, resultsArray)
+    print callersInPipeline
